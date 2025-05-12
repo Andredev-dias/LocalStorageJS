@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
+    <style>
+        #pedido{
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: green;
+            color: white;
+            font-size: 1.4rem;
+            width: auto;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        button img{
+            opacity: 0.7;
+            border-radius: 100%;
+            transition: all 200ms ease-in-out;
+        }
+        button img:hover{
+            opacity: 1;
+            cursor: pointer;
+            box-shadow: rgba(208, 141, 6, 0.664) 0px 5px 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Carrinho</h1>
+    <div id="lista">
+    </div>
+    <h3 id="total"></h3>
+    <button onclick="gerarDocumentoWord()"><img src="./imagens/WordIcon.png" alt="Icone de word" width="80px" height="auto"></button>
+    <p id="pedido">
+        Pedido gerado com sucesso
+        <button id="sc" onclick="successClose()">❌</button>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>

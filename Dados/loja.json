@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "descricao": "WaterCooler 01",
+        "imagem": "../Dados/imagens/produto01.webp",
+        "preco": 100.0
+    },
+    {
+        "id": 2,
+        "descricao": "WaterCooler 02",
+        "imagem": "../Dados/imagens/produto02.webp",
+        "preco": 300.0
+    },
+    {
+        "id": 3,
+        "descricao": "WaterCooler 03",
+        "imagem": "../Dados/imagens/produto03.webp",
+        "preco": 190.0
+    }
+]
