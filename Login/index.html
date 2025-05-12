@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="round">
-            <img class="logo" src="./images/logo.png" alt="Logo">
+      <div class="round">
+        <img class="logo" src="./images/logo.png" alt="Logo" />
+      </div>
+      <div class="wrap-input-label">
+        <label for="nome">Usuário</label>
+        <input type="text" id="nome" placeholder="Insira o usuário" />
+      </div>
+      <div class="wrap-input-label">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Insira a senha" />
+        <div onclick="showPassword()">
+            <img class="eye" src="./images/eye.png" alt="Eye" id="eye"/>
         </div>
-        <div class="wrap-input-label">
-            <label for="nome">Usuário</label>
-            <input type="text" id="nome" placeholder="Insira o usuário">
-        </div>
-        <div class="wrap-input-label">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Insira a senha">
-            <img class="eye" src="./images/eye.png" alt="Eye">
-        </div>
-        <p>esqueci minha senha</p>
-        <button>Login</button>
+      </div>
+      <p>esqueci minha senha</p>
+      <button class="btn-login" onclick="login()">Login</button>
     </div>
-</body>
+    <div class="error-div" id="error-modal">
+      <h3>Credenciais incorretas!!!</h3>
+      <button onclick="fecharError()">❌</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
+
 
